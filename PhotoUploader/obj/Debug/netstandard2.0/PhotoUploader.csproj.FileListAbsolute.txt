@@ -1,0 +1,15 @@
+C:\Users\PC\source\repos\PhotoUploader\PhotoUploader\bin\Debug\netstandard2.0\PhotoUploader.deps.json
+C:\Users\PC\source\repos\PhotoUploader\PhotoUploader\bin\Debug\netstandard2.0\PhotoUploader.dll
+C:\Users\PC\source\repos\PhotoUploader\PhotoUploader\bin\Debug\netstandard2.0\PhotoUploader.pdb
+C:\Users\PC\source\repos\PhotoUploader\PhotoUploader\obj\Debug\netstandard2.0\PhotoUploader.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\PhotoUploader\PhotoUploader\obj\Debug\netstandard2.0\PhotoUploader.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\source\repos\PhotoUploader\PhotoUploader\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\PC\source\repos\PhotoUploader\PhotoUploader\obj\Debug\netstandard2.0\PhotoUploader.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\PhotoUploader\PhotoUploader\obj\Debug\netstandard2.0\PhotoUploader.AssemblyInfo.cs
+C:\Users\PC\source\repos\PhotoUploader\PhotoUploader\obj\Debug\netstandard2.0\PhotoUploader.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\PhotoUploader\PhotoUploader\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\PC\source\repos\PhotoUploader\PhotoUploader\obj\Debug\netstandard2.0\PhotoUploader.dll
+C:\Users\PC\source\repos\PhotoUploader\PhotoUploader\obj\Debug\netstandard2.0\refint\PhotoUploader.dll
+C:\Users\PC\source\repos\PhotoUploader\PhotoUploader\obj\Debug\netstandard2.0\PhotoUploader.pdb
+C:\Users\PC\source\repos\PhotoUploader\PhotoUploader\obj\Debug\netstandard2.0\ref\PhotoUploader.dll
+C:\Users\PC\source\repos\PhotoUploader\PhotoUploader\obj\Debug\netstandard2.0\Views\UploadPage.xaml.g.cs

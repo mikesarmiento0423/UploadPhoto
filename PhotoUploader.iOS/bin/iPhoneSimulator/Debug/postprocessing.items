@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="PhotoUploader.iOS.app/PhotoUploader.iOS">
+      <BCSymbolMapName>PhotoUploader.iOS.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>PhotoUploader.iOS.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>\Users\michael.sarmiento\Library\Caches\Xamarin\mtbs\builds\PhotoUploader.iOS\5f2aed15adb09100ad71b84e022741266f9a2f69aa11d056d172b3e1393f1c91\obj\iPhoneSimulator\Debug\mtouch-symbols.list</SymbolFile>
+      <DSymName>PhotoUploader.iOS.app.dSYM</DSymName>
+      <SourceProjectPath>C:\Users\PC\source\repos\PhotoUploader\PhotoUploader.iOS</SourceProjectPath>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>

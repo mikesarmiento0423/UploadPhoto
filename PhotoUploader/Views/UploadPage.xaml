@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhotoUploader.Views.UploadPage"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             Title="New Diary"
+             x:Name="uploadPage">
+
+    <ContentPage.Resources>
+        <Style TargetType="Frame">
+            <Setter Property="BackgroundColor" Value="White" />
+            <Setter Property="Padding" Value="20" />
+            <Setter Property="CornerRadius" Value="5" />
+        </Style>
+        <Style TargetType="StackLayout">
+            <Setter Property="Orientation" Value="Vertical" />
+            <Setter Property="Spacing" Value="20" />
+            <Setter Property="VerticalOptions" Value="FillAndExpand" />
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="LimeGreen" />
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        </Style>
+    </ContentPage.Resources>
+    
+    <ScrollView>
+        <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="20,30" BackgroundColor="#F2F2F2" Spacing="30">
+
+            <Label Text="Add to site diary" FontSize="Title"/>
+            <Frame>
+                <StackLayout VerticalOptions="StartAndExpand">
+                    <Label Text="Add photos to site diary" HorizontalOptions="StartAndExpand" FontSize="Medium"/>
+
+                    <BoxView BackgroundColor="LightGray" HeightRequest="1" HorizontalOptions="FillAndExpand" />
+
+                    <CollectionView ItemsSource="{Binding SitePhoto.Photos}" ItemsLayout="HorizontalGrid" VerticalOptions="StartAndExpand" HeightRequest="100">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Padding="10">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <Image Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Source="{Binding ImageSource}" VerticalOptions="FillAndExpand" Aspect="AspectFill" HeightRequest="80" WidthRequest="80" />
+                                    <Image Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Source="close.png" HorizontalOptions="End" VerticalOptions="Start" HeightRequest="20" WidthRequest="20" Margin="0,-12,-12,0">
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding BindingContext.RemovePhotoCommand, Source={x:Reference Name=uploadPage}}" CommandParameter="{Binding .}"/>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+
+                    <Button Text="Add a photo" Command="{Binding PickPhotoCommand}"/>
+
+                    <Label Text="Include in photo gallery" HorizontalOptions="StartAndExpand" FontSize="Medium"  TextColor="LightGray"/>
+                </StackLayout>
+            </Frame>
+
+            <ActivityIndicator IsRunning="{Binding IsLoading}" IsVisible="{Binding IsLoading}" />
+
+            <Frame>
+                <StackLayout>
+                    <Label Text="Comments" HorizontalOptions="StartAndExpand" FontSize="Medium"/>
+                    <BoxView BackgroundColor="LightGray" HeightRequest="1" HorizontalOptions="FillAndExpand" />
+                    <Entry Placeholder="Comments" Text="{Binding SitePhoto.Comment}" />
+                </StackLayout>
+            </Frame>
+
+            <Button Text="Next" Command="{Binding UploadPhotoCommand}"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
